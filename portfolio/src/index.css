@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+html *::-webkit-scrollbar {
+  border-radius: 0;
+  width: 8px;
+}
+html *::-webkit-scrollbar {
+  border-radius: 0;
+  width: 8px;
+}
+html *::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(22, 24, 35, 0.06);
+}
+html *::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(22, 24, 35, 0.06);
+}
+html *::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+html *::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+.ndv__header-list {
+  @apply flex flex-col items-center gap-1 hover:text-hover_color after:absolute after:w-0 after:h-0.5 after:bg-hover_color after:-bottom-1 hover:after:w-full after:transition-all after:ease-in after:duration-300;
+}
+.ndv__icon-header {
+  @apply lg:hidden md:block;
+}
+.active-link {
+  @apply text-hover_color after:absolute after:w-full after:h-0.5 after:bg-hover_color after:-bottom-1;
+}
+.initial {
+  top: initial;
+}
+.ndv__header-menu-hidden {
+  @apply md:w-full px-6 pt-8 lg:relative lg:px-0 lg:pt-0 lg:pb-0 lg:bottom-[initial] left-0 md:shadow-header_shadow sm:shadow-header_shadow rounded-t-2xl fixed bottom-[-100%] transition-all ease-in-out duration-500;
+}
+.ndv__header-menu {
+  @apply md:w-full px-6 pt-8 pb-10  lg:px-0 lg:pt-0 lg:pb-0 lg:bottom-[initial] md:shadow-header_shadow sm:shadow-header_shadow rounded-t-2xl bottom-0 fixed right-0  left-0 bg-main_bg transition-all ease-in-out duration-500;
+}
+.wrapper {
+  @apply md:px-8 lg:px-[150px] sm:px-5 mt-[100px] sm:mt-16;
+}
+.ndv__img {
+  @apply w-full h-full object-cover object-center;
+}
+.ndv__button {
+  @apply w-[200px] sm:w-[150px] font-medium text-lg sm:text-base h-[58px] rounded-full bg-button_bg shadow-button_shadow focus:outline-none transition-all duration-300 ease-in-out bg-button_size hover:bg-button_hover;
+}
+.ndv__title {
+  @apply text-gray-500 tracking-[20px] text-3xl text-center mb-12 sm:text-xl;
+}
+.ndv__input {
+  @apply p-4 rounded-lg  w-[360px] bg-main_bg border focus:outline-second_color focus:border-[none] focus:ring-2;
+}
+.ndv__label {
+  @apply text-sm absolute top-[-10px] left-2 text-white bg-main_bg px-2;
+}
+.ndv__showScroll {
+  @apply bottom-20 lg:bottom-12;
+}
+.ndv__shadowHeader {
+  @apply shadow-xl;
+}
